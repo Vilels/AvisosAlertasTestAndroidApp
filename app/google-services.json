@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "584925598496",
+    "firebase_url": "https://avisosalertastest.firebaseio.com",
+    "project_id": "avisosalertastest",
+    "storage_bucket": "avisosalertastest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584925598496:android:2af0e345386e56fb",
+        "android_client_info": {
+          "package_name": "com.example.vilels.avisosalertastest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "584925598496-du99vo25aes5ib31rtuu7jairn4ota67.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-dnSit9i3dYhL8v21ZmT0_OFbz5WVf2Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
