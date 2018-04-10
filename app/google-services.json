@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "584925598496-uer2fdtlflgacsfelnlksuoc6ek1s5ok.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vilels.avisosalertastest",
+            "certificate_hash": "08738e69b0563ad07e57c6171300201dafb47335"
+          }
+        },
+        {
           "client_id": "584925598496-du99vo25aes5ib31rtuu7jairn4ota67.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "584925598496-du99vo25aes5ib31rtuu7jairn4ota67.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
