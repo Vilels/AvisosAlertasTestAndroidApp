@@ -1,6 +1,7 @@
 package com.example.vilels.avisosalertastest;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -17,7 +18,12 @@ import static android.content.ContentValues.TAG;
 public class MainActivity extends Activity {
 
     public String tokenString;
-    protected Button buttonToken;
+    protected Button buttonToken, buttonNext;
+
+    public void changeActivity (Class<?> subActivity){
+        Intent x = new Intent(this, subActivity);
+        startActivity(x);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +31,22 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         buttonToken = (Button) findViewById(R.id.buttonToken);
+        buttonNext = (Button) findViewById(R.id.buttonNext);
+
+
         buttonToken.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View v) {
                 tokenString = FirebaseInstanceId.getInstance().getToken();
                 Toast.makeText(MainActivity.this, tokenString, Toast.LENGTH_SHORT).show();
                 sendRegistrationToServer(tokenString);
+            }
+        });
+
+        buttonNext.setOnClickListener(new Button.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                changeActivity(Main2Activity.class);
             }
         });
     }
