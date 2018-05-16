@@ -20,11 +20,19 @@ public class Main2Activity extends Activity {
         setContentView(R.layout.activity_main2);
 
         buttonRegisto = (Button) findViewById(R.id.button2_1);
+        buttonLogin = (Button) findViewById(R.id.button2_2) ;
 
         buttonRegisto.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View v) {
                 changeActivity(Main3Activity.class);
+            }
+        });
+
+        buttonLogin.setOnClickListener(new Button.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                changeActivity(Main6Activity.class);
             }
         });
     }

@@ -6,8 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Main4Activity extends Activity {
-    protected Button buttonNext;
+public class Main5Activity extends Activity {
+
+    protected Button buttonFinalizar;
 
     public void changeActivity (Class<?> subActivity){
         Intent x = new Intent(this, subActivity);
@@ -17,14 +18,14 @@ public class Main4Activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main4);
+        setContentView(R.layout.activity_main5);
 
-        buttonNext = (Button) findViewById(R.id.button4_Proximo);
+        buttonFinalizar = (Button) findViewById(R.id.button5_Finalizar);
 
-        buttonNext.setOnClickListener(new Button.OnClickListener(){
+        buttonFinalizar.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View v) {
-                changeActivity(Main5Activity.class);
+                changeActivity(Main6Activity.class);
             }
         });
     }
