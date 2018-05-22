@@ -44,9 +44,14 @@
             android:name=".Main5Activity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-        <activity android:name=".Main6Activity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".Main6Activity" />
+        <activity android:name=".NotificationClickActivity">
+            <intent-filter>
+                <action android:name="com.example.vilels.avisosalertastest_TARGET_NOTIFICATION"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

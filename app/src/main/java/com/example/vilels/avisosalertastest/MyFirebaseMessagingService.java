@@ -17,6 +17,7 @@ import static android.content.ContentValues.TAG;
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
+        String click_action = remoteMessage.getNotification().getClickAction();
 
         Log.d(TAG, "From: " + remoteMessage.getFrom());
 
@@ -26,7 +27,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         super.onMessageReceived(remoteMessage);
         Log.d("msg", "onMessageReceived: " + remoteMessage.getData().get("message"));
-        Intent intent = new Intent(this, MainActivity.class);
+
+        Intent intent = new Intent(this, NotificationClickActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_ONE_SHOT);
         String channelId = "Default";
