@@ -3,23 +3,23 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@mipmap/ic_launcher_round"
+            android:icon="@drawable/ic_home_black_24dp"
             android:title="Home"/>
         <item
             android:id="@+id/nav_gestaoTemas"
-            android:icon="@mipmap/ic_launcher_round"
+            android:icon="@drawable/ic_edit_black_24dp"
             android:title="Gestão de Temas"/>
         <item
             android:id="@+id/nav_perfil"
-            android:icon="@mipmap/ic_launcher_round"
+            android:icon="@drawable/ic_person_black_24dp"
             android:title="Meu Perfil"/>
         <item
             android:id="@+id/nav_defenicoes"
-            android:icon="@mipmap/ic_launcher_round"
+            android:icon="@drawable/ic_settings_black_24dp"
             android:title="Defenições App"/>
         <item
             android:id="@+id/nav_secao"
-            android:icon="@mipmap/ic_launcher_round"
+            android:icon="@drawable/ic_backspace_black_24dp"
             android:title="Terminar Seção"/>
     </group>
 </menu>
