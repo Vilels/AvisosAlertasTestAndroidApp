@@ -21,7 +21,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
 
-        String click_action = remoteMessage.getNotification().getClickAction();
+        String click_action = remoteMessage.getData().get("click_action");
         String title = "0";
         String body = "0";
         String key_1 = "0";
@@ -35,7 +35,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             key_2 = remoteMessage.getData().get("key_2");
         }
 
-        sendNotification(remoteMessage.getNotification().getBody(), remoteMessage.getNotification().getTitle(), title, body, key_1, key_2, click_action);
+        sendNotification(remoteMessage.getData().get("body"), remoteMessage.getData().get("title"), title, body, key_1, key_2, click_action);
 
 
     }
