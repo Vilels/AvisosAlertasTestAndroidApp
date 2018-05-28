@@ -25,7 +25,7 @@ public class Main5Activity extends Activity {
         buttonFinalizar.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View v) {
-                changeActivity(Main6Activity.class);
+                changeActivity(Main2Activity.class);
             }
         });
     }

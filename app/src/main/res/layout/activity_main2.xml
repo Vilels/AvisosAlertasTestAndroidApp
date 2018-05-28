@@ -79,7 +79,7 @@
         app:layout_constraintVertical_bias="0.034" />
 
     <EditText
-        android:id="@+id/editText2_1"
+        android:id="@+id/email"
         android:layout_width="248dp"
         android:layout_height="37dp"
         android:layout_marginBottom="8dp"
@@ -103,7 +103,7 @@
         app:layout_constraintVertical_bias="0.374" />
 
     <EditText
-        android:id="@+id/editText2_2"
+        android:id="@+id/password"
         android:layout_width="248dp"
         android:layout_height="37dp"
         android:layout_marginBottom="8dp"
@@ -114,7 +114,7 @@
         android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:hint="Palavra-passe"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:textAlignment="viewStart"
         android:textAllCaps="false"
         android:textColor="@color/colorTextGrey"
@@ -168,6 +168,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.41"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2_2" />
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
 </android.support.constraint.ConstraintLayout>
